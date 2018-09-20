@@ -13,6 +13,11 @@ class ModuleManager : public ModuleInterface
   Init(){ childrenMap->Init(); };//加载所有用到的模块的动态库
 }
 
+class pMenuModuleImpl : public ModuleInterface
+{
+
+}
+
 enum class Module_type = {    UI_MainWindow = 0x10000;
                                 UI_Menu = UI_MainWindow| 0x100;
                                   UI_Menu_Child = UI_Menu |  0x1;
