@@ -1,0 +1,6 @@
+1. Svn gui tool:  http://wiki.rabbitvcs.org/wiki/install/ubuntu
+
+2. Ubuntu系统安装后默认用户为一般用户,需要通过
+   sudo passwd来获取Root用户权限.
+   
+3.starUML for Linux
