@@ -1,0 +1,41 @@
+1. QT .pro 工程管理
+  主程序.pro SUBDIRS 包含所有模块文件夹
+  一个模块一个工程,一个文件夹
+  每个模块工程.pro TEMPLATE = share 
+  即动态库 模块
+
+2.class ModuleManager;
+
+  enum class Module_type = {  UI_MainWindow = 0x10000;
+                              UI_Menu = UI_MainWindow| 0x100;
+                              UI_Menu_Child = UI_Menu |  0x1;
+                              UI_Toolbar = UI_MainWindow| 0x200;
+                              UI_Toolbar_Child = UI_Toolbar| 0x1;
+                              ...
+                              Httper = 0x20000;
+                              ...
+                              Cfg_Manage = 0x30000;
+                              ...
+                           }
+  
+3.
+class MenuImp;
+class ToolbarImp;
+class HttperImp;
+class CfgManagerImp;
+
+class ModuleInterface
+{
+public:
+    Register();
+    Init();
+    ~Init();
+    ...
+public:
+  MenuImp*      pMenu;
+  ToolbarImp    pToolbar;
+  HttperImp     pHttper;
+  CfgManagerImp pCfgManager;
+  ...
+}
+
