@@ -1,0 +1,14 @@
+QT Creator调试时,QString 变量显示为字符数组方式,形如:
+
+      [0]	'{' 	123    	0x7b	char
+			[1]	'"' 	34    	0x22	char
+			[2]	'c' 	99    	0x63	char
+			[3]	'e' 	101    	0x65	char
+			[4]	'r' 	114    	0x72	char
+			[5]	't' 	116    	0x74	char
+      
+这时想要获得连续的字符串,可以通过一下方式
+
+Views -> [Locals and Expressions] ->选择字符串变量,右击[Changes Value Display Format] ->UTF-8 String in Separate Window.
+
+字符串将显示在弹出的TextEdit Dialog中.
