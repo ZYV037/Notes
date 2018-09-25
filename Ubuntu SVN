@@ -3,4 +3,8 @@
 2. Ubuntu系统安装后默认用户为一般用户,需要通过
    sudo passwd来获取Root用户权限.
    
+   设置默认比对工具为 /usr/bin/bcompare
+   
+   显示程序路径:  which bcompare
+   
 3.starUML for Linux
