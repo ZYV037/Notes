@@ -1,0 +1,3 @@
+int aa = 0xFFFFFFFF;//aa在64位系统中用64位标识，前32位默认填0.用作int时只读后32位。但是作为64位读时是0xFFFFFFFFFFFFFFFF而非0x00000000FFFFFFFF
+int32_t cc = 0xFFFFFFFF;
+int64_t bb = aa << 32;
