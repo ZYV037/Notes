@@ -1,0 +1,21 @@
+通过这个方法可以避免使用boll flag来判断
+QMap<qint32, QString> MakeSpecialNodeNameMap()
+{
+    QMap<qint32, QString> specialNodeNameMap;
+    specialNodeNameMap[GROUP_NODE_SYSTEM_CONFIGURE*-1] = STR_GROUP_NODE_SYSTEM_CONFIGURE;
+    specialNodeNameMap[GROUP_NODE_SUBSYSTEM_CONFIGURE*-1] = STR_GROUP_NODE_SUBSYSTEM_CONFIGURE;
+    specialNodeNameMap[GROUP_NODE_SELF_TOOLBTN_GROUP_P_PICK*-1] = STR_GROUP_NODE_SELF_TOOLBTN_GROUP_P_PICK;
+    specialNodeNameMap[GROUP_NODE_SELF_TOOLBTN_GROUP_S_PICK*-1] = STR_GROUP_NODE_SELF_TOOLBTN_GROUP_S_PICK;
+    specialNodeNameMap[GROUP_NODE_SELF_TOOLBTN_GROUP_WAVE_EXPAND*-1] = STR_GROUP_NODE_SELF_TOOLBTN_GROUP_WAVE_EXPAND;
+    specialNodeNameMap[GROUP_NODE_SELF_TOOLBTN_GROUP_COMPONENT_SHOW*-1] = STR_GROUP_NODE_SELF_TOOLBTN_GROUP_COMPONENT_SHOW;
+    specialNodeNameMap[GROUP_NODE_SELF_TOOLBTN_GROUP_WAVE_TRANS*-1] = STR_GROUP_NODE_SELF_TOOLBTN_GROUP_WAVE_TRANS;
+    specialNodeNameMap[NODE_SEPARATOR] = STR_NODE_SEPARATOR;
+    specialNodeNameMap[NODE_STRETCH] = STR_NODE_STRETCH;
+    return specialNodeNameMap;
+}
+
+extern const QMap<qint32, QString>& GetSpecialNodeNameMap()
+{
+    static QMap<qint32, QString> staticSpecialNodeNameMap = MakeSpecialNodeNameMap();
+    return staticSpecialNodeNameMap;
+}
