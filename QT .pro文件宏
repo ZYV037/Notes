@@ -1,0 +1,5 @@
+ DESTDIR = $$PWD/lib/win/$$QT_ARCH
+ 
+ $$QT_ARCH：i386 x86_64.test in MSVC, MINGw
+ 
+ $${x.y}
