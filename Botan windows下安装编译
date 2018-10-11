@@ -1,0 +1,12 @@
+doc:https://botan.randombit.net/manual/building.html
+git:https://github.com/randombit/botan
+
+1.安装VS2017
+
+2.安装Python
+
+3. 运行x64 Native Tools Command Prompt for VS 2017
+    $ python configure.py --cc=msvc --os=windows
+    $ nmake
+    $ botan-test.exe
+    $ nmake install
