@@ -4,3 +4,7 @@ https://github.com/Alexpux/MINGW-packages
   pacman -Sy mingw-w64-x86_64-OpenSceneGraph
 
 其他可以在https://github.com/Alexpux/MINGW-packages找到
+
+获取mingw64：pacman -Sy mingw-w64-x86_64-gcc
+
+获取qt：pacman -Sy mingw-w64-x86_64-qt
