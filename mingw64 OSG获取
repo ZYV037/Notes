@@ -1,0 +1,6 @@
+https://github.com/Alexpux/MINGW-packages
+
+下载安装msys2：http://www.msys2.org/
+  pacman -Sy mingw-w64-x86_64-OpenSceneGraph
+
+其他可以在https://github.com/Alexpux/MINGW-packages找到
