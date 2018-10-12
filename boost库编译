@@ -1,0 +1,12 @@
+https://www.boost.org/doc/libs/1_68_0/more/getting_started/windows.html
+
+
+1. add mingw64 bin path to Env Path
+
+Go to the directory tools\build\.
+Run bootstrap.bat
+Run b2 install --prefix=PREFIX where PREFIX is the directory where you want Boost.Build to be installed
+Add PREFIX\bin to your PATH environment variable.
+
+windows mingw64
+.\b2.exe -j8 --build-dir=.\tmp --build-type=complete threading=multi link=shared address-model=64 toolset=gcc stage
