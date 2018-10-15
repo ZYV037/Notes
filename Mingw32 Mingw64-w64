@@ -1,0 +1,6 @@
+[Mingw32]：(http://www.mingw.org/) Minimalist GNU for Windows
+[Mingw-w64]：(http://www.mingw-w64.org/) GCC for Windows 64 & 32 bits [mingw-w64]
+[msys2]:(http://www.msys2.org/)  Mingw-w64 packages 
+      
+
+Mingw-w64库与MSVC64库不通用
