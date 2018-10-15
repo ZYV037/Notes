@@ -8,3 +8,5 @@ https://github.com/Alexpux/MINGW-packages
 获取mingw64：pacman -Sy mingw-w64-x86_64-gcc
 
 获取qt：pacman -Sy mingw-w64-x86_64-qt
+  qt目录要移到C盘根目录下 Programe files目录下有问题
+
