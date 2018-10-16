@@ -1,8 +1,6 @@
 # Notes
 
 ## Friends Wanted
-Language:          C++,python
-
 
 ### Other Space  
 - [Books](https://1drv.ms/f/s!AjnTck1kjTur020KBel2WntM13Af)    
