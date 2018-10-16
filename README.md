@@ -1,6 +1,6 @@
 # Notes
 
-## Note useful program tech in daily work & life. 
+## Friends Wanted
 Language:          C++,python
 
 
@@ -16,4 +16,4 @@ VENI VIDI VICI  -Julius Caesar
 
 
 Email: 461177348@qq.com    
-Phone/Wechat: 18226620200
+Phone: 18226620200
