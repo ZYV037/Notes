@@ -1,0 +1,15 @@
+1.下载安装，安装选择resource
+  http://download.qt.io/archive/qt/
+
+2.安装python，perl，ruby并检查是否添加到环境变量Path中
+
+3.安装C++ compiler：Mingw64
+
+4.cd QT_src
+  .\configure
+  .\configure -debug-and-release -opensource -prefix "D:\Qt\Qt5.9.2\5.9.2\mingw64_x64" -platform win32-g++ -nomake examples -opengl desktop 
+  C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\mingw32-make.exe -j4(depend on you cpu)
+   C:\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin\mingw32-make.exe install
+   
+Warning:
+1.命令行执行过程中不要强退，否则会出现错误，需要重新下代码重新编译
