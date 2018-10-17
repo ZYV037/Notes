@@ -1,6 +1,5 @@
-# Notes
 
-## Friends Wanted
+# Friends Wanted
 
 ### Other Space  
 - [Books](https://1drv.ms/f/s!AjnTck1kjTur020KBel2WntM13Af)
