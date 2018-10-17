@@ -10,7 +10,7 @@
 - Wechat Moments: 18226620200
 - Movie: Talk to me directly
 
-  ####VENI VIDI VICI  -Julius Caesar
+####VENI VIDI VICI  -Julius Caesar
 
 
 Email: 461177348@qq.com    
