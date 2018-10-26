@@ -1,0 +1,20 @@
+遇到问题，抓住问题的本质
+不要不停的去猜，去试
+
+要用事实说话，总会有提示，总会有返回值，Get the point， you get the Heaven.
+Errno是个很好的
+
+#include <errno.h>
+
+extern int errno;
+
+errno = 0;
+
+int res = sem_open(x,x,x);
+if( res = SEM_FAILED)
+{
+  printf("Errno :%d %s\n", errno, getErrStr(errno));
+}
+
+Window sempore not implemented.
+like sem_open,sem_xxx always return failed, and "the errno" tell you why.
