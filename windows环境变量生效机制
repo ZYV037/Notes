@@ -5,4 +5,4 @@
 2.Win10 环境变量理论上更新立即生效。但是实际上存在不刷新的可能。
   current user environment 和 system environment刷新机制不同。
   
-  
+ 3. QTCreator可能需要重启才能让QTCreator环境生效
