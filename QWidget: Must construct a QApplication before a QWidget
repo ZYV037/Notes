@@ -1,0 +1,7 @@
+QWidget: Must construct a QApplication before a QWidget
+
+This error waste me more than fucking 3 days,and hurt my heart.
+
+Reason:In porject, some dynamic lib use release qt lib like QT5core.dll,QT5Widget.dll...,and some other depends on debug qt lib like QT5cored.dll...
+       And than you run you fucking release programe, it's just cannot start.You try to debug you programe and run debug, thie error occured.
+       
