@@ -1,3 +1,5 @@
 #include <fstream>
 std::ofstream ifs("dis_treace.log");
 ifs << __FILE__ << __LINE__  << std::endl;
+
+项目中Releasae版本调试通过定义日志等级，宏定义日志打印等形式 不打印/全打印日志来Debug Relase，定位客户现场问题。 
