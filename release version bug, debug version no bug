@@ -1,0 +1,3 @@
+#include <fstream>
+std::ofstream ifs("dis_treace.log");
+ifs << __FILE__ << __LINE__  << std::endl;
