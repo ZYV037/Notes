@@ -1,0 +1,33 @@
+1. relative sympol '.' '..' case qmake error like below,so need we set absolute path
+    qmake xxx.subdirs = .. . case
+
+2. include(**.pro) for common environment share
+
+3.make -j4 :number 4 depend on you pc cpu cores.
+
+4. CONFIG += ordered means simple thread compile all the time, even with you 16 cores pc.
+   by the way, watching maketool wark hard is good way to kill you time.
+
+Example code:
+
+TEMPLATE = subdirs
+include(D:\WtgeoProducts\System\WMPS\qmake_path)
+SUBDIRS += \
+    DisCfgManager \
+    DisDataCenter \
+    DisReportManager    \
+    EventDetailGenParser    \
+    BufferDataManager
+
+    ModuleManager.subdir = $$CommonDir/ModuleManager
+    Communication.subdir = $$CommonDir/Communication
+
+    ReportEventGenParser.subdir = $$WmpsCommon/ReportEventGenParser
+    SurpacDtmFileParser.subdir = $$WmpsCommon/SurpacDtmFileParser
+    ModelManager.subdir = $$WmpsCommon/ModelManager
+    CmdParser.subdir = $$WmpsCommon/CmdParser
+
+    DisReportManager.depends += DisDataCenter
+    DisReportManager.depends += GraphicsComponent
+    DisReportManager.depends += ColorControl
+
