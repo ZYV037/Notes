@@ -1,4 +1,5 @@
-通过这个方法可以避免使用boll flag来判断
+通过这个方法可以避免使用boll flag来判断.
+Lamada is the best solution for this case.
 QMap<qint32, QString> MakeSpecialNodeNameMap()
 {
     QMap<qint32, QString> specialNodeNameMap;
