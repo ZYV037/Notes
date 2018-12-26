@@ -1,0 +1,29 @@
+class A
+{
+public://Primary Interface
+  CallA();
+  CallB() const;
+
+public://Sencond Interface
+  CallC();
+  CallD();
+  
+public:
+  A();
+  virtual ~A();
+
+private:
+  int a = 0;
+  string b;
+  
+private:
+  func();
+  func2();
+}
+
+变量声明与构造初始化对应
+函数声明顺序 与 cpp 实现顺序对应
+指针变量在头文件中使用Class声明，在cpp中include头文件，减少编译时间
+写Modern C++
+ErrorProne、Self Documentation、
+const override的使用、参数命名规范
