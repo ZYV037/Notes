@@ -27,3 +27,5 @@ private:
 写Modern C++
 ErrorProne、Self Documentation、
 const override的使用、参数命名规范
+多用continue，break，return 面条形的代码
+如果提供了get set 那么即使在类内部函数中也要使用这两个函数，而不要直接去用变量。减少进入的唯一性
