@@ -1,0 +1,5 @@
+a pair function like 
+  static bool ParseFractureFile(const QString& filename, QVector<FractureModelObj>& fractures);
+  static bool GenFractureFile(const QVector<FractureModelObj>& fractures, const QString& filename );
+
+We'd better avoid same parameter, because mis use of those function is easy.
