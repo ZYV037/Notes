@@ -1,0 +1,21 @@
+#include <cerrno>
+#include <iostream>
+#include <fcntl.h>
+#include <locale>
+#include <iomanip>
+#include <codecvt>
+
+template<class Facet>
+struct deletable_facet : Facet
+{
+    template<class ...Args>
+    deletable_facet(Args&& ...args) : Facet(std::forward<Args>(args)...) {}
+    ~deletable_facet() {}
+};
+
+ std::string fileNme = "C:/Users/Aaron/Desktop/中文/a.txt";
+ 
+std::wstring_convert< deletable_facet<std::codecvt_utf8<wchar_t, 0x10ffff, std::codecvt_mode::little_endian>>, wchar_t> convWchar;
+//caution windows use std::codecvt_mode::little_endian
+
+std::wstring str16 = convWchar.from_bytes( fileNme.data() );
