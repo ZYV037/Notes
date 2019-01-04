@@ -1,3 +1,5 @@
+//https://stackoverflow.com/questions/3571250/wwinmain-unicode-and-mingw
+
 #ifdef _WIN32
 
 #include <Windows.h>
