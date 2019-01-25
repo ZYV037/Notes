@@ -1,2 +1,16 @@
+Window快捷键：
+	Win + E : File Explorer
+	Win + D : Desktop
+	Win + S : Search
+	Ctrl + N : File Explorer可以打开新的文件浏览器
+
+QT Creator快捷键：
+	Ctrl + M : Bookmark
+	Ctrl + . : Next Bookmark
+	Ctrl + , : Previous Bookmark
+	Ctrl + F : Find/Repalce
+	F1	 ： QT documention
+	Alt + Down, Alt + Up : Go Back/Go Forward
+	Show in Explorer, svn diff 可以自定义
 Alt + U : Lowercase Selection 选中的转为小写
 Shift + Alt + U: Uppercase Selection 选中的转为大写
