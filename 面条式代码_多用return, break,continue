@@ -1,0 +1,81 @@
+多用return,break,continue 减少嵌套
+多用switch
+
+bool func(const string& inParam, string& outParam)
+{
+  if(inParam.empty() == false)
+  {
+    switch( x )
+    {
+    case conditionA:
+      outParam = "conditionA";
+      break;
+    case conditionB:
+       outParam = "conditionB";
+      break;
+    default:
+      outParam = "Default";
+      break;
+    }
+
+    for(int i = 0; i < inParam.size(); ++i)
+    {
+      if( conditionA )
+      {
+        //1111111111111111111111111
+        if(conditionB)
+        {
+           //1111111111111111111111111
+        }
+        else
+        {
+          //1111111111111111111111111
+        }  
+      }   
+    }
+    return true;
+  }
+  
+  return false;
+}
+
+面条式代码：
+bool func(const string& inParam, string& outParam)
+{
+  if( inParam.empty() == true)
+  {
+    return false;
+  }
+
+  switch( x )
+  {
+  case conditionA:
+    outParam = "conditionA";
+    break;
+  case conditionB:
+     outParam = "conditionB";
+    break;
+  default:
+    outParam = "Default";
+    break;
+  }
+  
+  for(int i = 0; i < inParam.size(); ++i)
+  {
+      if( false==conditionA )
+      {
+        continue;
+      }
+
+      if(conditionB)
+      {
+         //1111111111111111111111111
+      }
+      else
+      {
+        //1111111111111111111111111
+      }  
+  }
+  
+  return true;
+}
