@@ -1,0 +1,5 @@
+function: int foo()
+
+forget return in the end 
+
+it's crash at the end of function at release mode.
