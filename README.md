@@ -1,7 +1,5 @@
 
-# Be Happy
-
-Daily Coding Get.
+# Daily Coding Get.
 
 <font face="微软雅黑">`VENI VIDI VICI  -Julius Caesar`</font>
 
