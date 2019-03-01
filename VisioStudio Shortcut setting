@@ -1,0 +1,8 @@
+[Tools]->[Options]->[Environment]->[Keyboard]
+for example:
+View.NavigateBackward 
+1. assign a shortcut "Alt + Left Arrow"
+2. **Caution: check shortcut currently ues by: the 'Global shortcut' is conflict with 'Text Edit shortcut', so
+   location the 'Text Edit Shortcut' using and Remove it.
+3. Save and Check.
+
