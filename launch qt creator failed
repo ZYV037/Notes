@@ -1,0 +1,7 @@
+launch qt creator 4.9.0, than only a Icon apear in window buttom and the mainwindow disapear.
+
+reinstall qt creatror cannot fixed.
+
+fixed by : Everything search QtProject, delete the qt project config file under user folder.
+
+reason: the QtProject file fatal. 
