@@ -12,5 +12,8 @@ QT Creator快捷键：
 	F1	 ： QT documention
 	Alt + Down, Alt + Up : Go Back/Go Forward
 	Show in Explorer, svn diff 可以自定义
-Alt + U : Lowercase Selection 选中的转为小写
-Shift + Alt + U: Uppercase Selection 选中的转为大写
+        Alt + U : Lowercase Selection 选中的转为小写
+        Shift + Alt + U: Uppercase Selection 选中的转为大写
+	
+Personal: 
+	ProjectExplorer ShowInGraphicalSHeell Show In Explorder :	F6
