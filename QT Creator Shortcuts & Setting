@@ -14,6 +14,20 @@ QT Creator快捷键：
 	Show in Explorer, svn diff 可以自定义
         Alt + U : Lowercase Selection 选中的转为小写
         Shift + Alt + U: Uppercase Selection 选中的转为大写
+	Ctrl + > (ctrl+shift+.): Unfold
+	Ctrl + < (ctrl+shift+,): Fold
+	
 	
 Personal: 
 	ProjectExplorer ShowInGraphicalSHeell Show In Explorder :	F6
+
+Options-> Text Editor -> Completion
+    Automatically insert matching characters
+    
+    Insert opening or closing brackets : close
+    Insert closing quote               : close
+    Surround text selection with brackets: close
+    Surround text selection with quotes : close
+    Animate automatically inserted text : close
+
+config file: qtcreator.kms
