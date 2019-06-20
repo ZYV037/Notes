@@ -9,7 +9,7 @@
 2. if static lib depend on dymamic lib, you should append dynamic lib's __declspec(dllexport) macro in you code.
    or you have to add lib depend in you static lib project.
 
-depend dynamic lib export macro:
+  depend dynamic lib export macro:
   #if defined(DATATRANSFER_LIBRARY)
   #  define DATATRANSFER_EXPORT Q_DECL_EXPORT
   #else
@@ -17,3 +17,7 @@ depend dynamic lib export macro:
   #endif
   
   Need add this to your static lib project
+  
+ 3. add static lib include path.
+ INCLUDEPATH += \
+    $$PWD/../StaticLibInclude  \
