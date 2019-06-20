@@ -1,0 +1,19 @@
+1. static lib should append before dynamic lib for reduce compile error.
+  qt for example: 
+  LIBS += -L$$PWD/$$CommonDir/Lib/ -lDataTransfer #static lib
+  ...
+  
+  LIBS += -L$$PWD/$$CommonDir/Lib/ -lCommunication  #dynamic
+  ...
+  
+2. if static lib depend on dymamic lib, you should append dynamic lib's __declspec(dllexport) macro in you code.
+   or you have to add lib depend in you static lib project.
+
+depend dynamic lib export macro:
+  #if defined(DATATRANSFER_LIBRARY)
+  #  define DATATRANSFER_EXPORT Q_DECL_EXPORT
+  #else
+  #  define DATATRANSFER_EXPORT Q_DECL_IMPORT
+  #endif
+  
+  Need add this to your static lib project
