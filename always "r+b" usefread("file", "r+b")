@@ -1,0 +1,1 @@
+fread("r") with file content with "\0\0" will case error.
