@@ -1,0 +1,41 @@
+The collect exe or dynamic lib's dependencies shared lib script.
+
+#!/bin/bash
+LibDir=$PWD"/lib"
+Target=$1
+lib_array=($(ldd $Target | grep -o "/.*" | grep -o "/.*/[^[:space:]]*"))
+$(mkdir $LibDir)
+for Variable in ${lib_array[@]}
+do
+    cp "$Variable" $LibDir
+done
+
+1. A clean ubuntu without QT, fisrt you have to satisfied libqxcb.so dependencies.
+
+[collect.sh libqxcb.so]
+
+2. get your pragrame dependencies
+
+[collect.sh your_programe_name]
+
+3. run your pragrame.
+[sudo pmap <PID> -p ]to check dependencies.
+
+defalult qt lib path:
+$QTDIR/lib/gcc_gnu_x86_64/plugin/
+imageformats
+platforms
+...
+
+bug encounter:
+When I copy
+libQt5Svg.so.5.13.0
+libQt5Svg.so.5.13,
+some error happend.
+So my *.svg icon in my pragrame disapear.
+
+I fixed this by 
+ln -s libQt5Svg.so.5 libQt5Svg.so.5.13.0
+ln -s libQt5Svg.so.5 libQt5Svg.so.5.13
+
+So the pragrame can get the libQt5Svg.so needed.
