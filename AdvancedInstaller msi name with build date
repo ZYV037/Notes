@@ -1,5 +1,5 @@
-1. renmae bat as below and name "rename_msiname_with_date.bat"
-：：Rename 万泰微地震监测_3.0.3.8739_Win64.msi To 万泰微地震监测_20190701_3.0.3.8739_Win64.msi
+1. rename bat as below and name "rename_msiname_with_date.bat"
+::Rename 万泰微地震监测_3.0.3.8739_Win64.msi To 万泰微地震监测_20190701_3.0.3.8739_Win64.msi
 chcp 65001
 
 set MsiName=万泰微地震监测_%1_Win64.msi
