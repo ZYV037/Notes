@@ -1,0 +1,14 @@
+1. renmae bat as below and name "rename_msiname_with_date.bat"
+：：Rename 万泰微地震监测_3.0.3.8739_Win64.msi To 万泰微地震监测_20190701_3.0.3.8739_Win64.msi
+chcp 65001
+
+set MsiName=万泰微地震监测_%1_Win64.msi
+set MsiNameWithDate=万泰微地震监测_%DATE:~0,4%%DATE:~5,2%%DATE:~8,2%_%1_Win64.msi
+
+ren %MSIName% %MsiNameWithDate%
+
+2. Advanced Installer [Package Definition] [Builds] [Build Events]
+
+add PostBuild Event
+Command = rename_msiname_with_date.bat
+Arguments =[|ProductVersion]
