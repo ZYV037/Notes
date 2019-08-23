@@ -9,3 +9,9 @@ Reason:
  after import sql, mysql will update index background. 
  if you do update immediately, the index may be destroyed.
  so the index failed, and your sql will be very slow.
+
+resolution:
+   after import .sql file, you'd better check the index effected or not.
+   explain select channelid form WaveDataInfo where channel_id = 2;
+   if the type is range, the index successed.
+   if not, wait a second to check index effect.
