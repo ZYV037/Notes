@@ -1,0 +1,11 @@
+1. import *.sql: mysql -uroot -p123456 -hlocalhost chengtan2015 < MyProject/chengtan2015/chengtan2015.sql --default-character-set=utf8
+   chengtan2015.sql is about 100Mb size.
+
+2. after import update table data immediately.
+
+3. may sql/update very slow to 3 second.
+
+Reason:
+ after import sql, mysql will update index background. 
+ if you do update immediately, the index may be destroyed.
+ so the index failed, and your sql will be very slow.
