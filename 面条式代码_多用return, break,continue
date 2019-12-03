@@ -1,5 +1,6 @@
 多用return,break,continue 减少嵌套
 多用switch
+目的:美观,增加可读性
 
 bool func(const string& inParam, string& outParam)
 {
