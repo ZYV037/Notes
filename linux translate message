@@ -1,0 +1,10 @@
+man 3 gettext
+
+/usr/share/locale: mo tranlate file
+
+util-linux.mo translate lscpu and other util-linux programe
+
+if you want run lscpu in en_US:
+  QString defaultLanguage = getenv("LANGUAGE");
+  setenv ("LANGUAGE", "en_US", 1);    //for aviod translate in lscpu...
+  setenv ("LANGUAGE", defaultLanguage.toStdString().c_str(), 1);
