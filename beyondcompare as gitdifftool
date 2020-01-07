@@ -1,0 +1,23 @@
+1. 下载beyond compare for linux debian
+   http://www.scootersoftware.com/download.php
+
+   sudo dpkg -i bcompare-4.3.3.24545_amd64.deb
+
+2. 破解
+   https://www.cnblogs.com/bluestorm/p/10259441.html
+
+3. 设置git difftool mergetool
+
+	vim ~/.gitconfig
+
+	[diff]
+		tool = bc
+	[difftool]
+		prompt = false
+	[merge]
+		tool = bc
+	[mergetool]
+		prompt=false
+
+4.使用
+  git difftool
